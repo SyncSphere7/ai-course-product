@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Engineering from Scratch — The Complete Curriculum</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;line-height:1.6;color:#1a1a2e;background:#fff}
+.container{max-width:900px;margin:0 auto;padding:0 24px}
+.hero{background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);color:#fff;padding:80px 0;text-align:center}
+.hero h1{font-size:2.8em;font-weight:800;margin-bottom:16px;line-height:1.2}
+.hero h1 span{background:linear-gradient(90deg,#00d2ff,#3a7bd5);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{font-size:1.25em;opacity:0.85;max-width:600px;margin:0 auto 32px}
+.cta{display:inline-block;background:linear-gradient(90deg,#00d2ff,#3a7bd5);color:#fff;padding:16px 40px;border-radius:8px;font-size:1.15em;font-weight:700;text-decoration:none;transition:transform 0.2s,box-shadow 0.2s}
+.cta:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(0,210,255,0.3)}
+.stats{display:flex;justify-content:center;gap:48px;margin-top:48px;flex-wrap:wrap}
+.stat{text-align:center}
+.stat-num{font-size:2em;font-weight:800;color:#00d2ff}
+.stat-label{font-size:0.9em;opacity:0.7}
+.section{padding:64px 0}
+.section h2{font-size:2em;font-weight:700;margin-bottom:24px;text-align:center}
+.section p.sub{font-size:1.1em;color:#555;text-align:center;max-width:600px;margin:0 auto 40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px}
+.card{background:#f8f9fa;border-radius:12px;padding:28px;border:1px solid #e9ecef}
+.card h3{font-size:1.15em;margin-bottom:8px;color:#1a1a2e}
+.card p{color:#555;font-size:0.95em}
+.card .icon{font-size:2em;margin-bottom:12px}
+.highlight{background:linear-gradient(135deg,#0f0c29,#302b63);color:#fff}
+.highlight h2{color:#fff}
+.highlight .card{background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.2)}
+.highlight .card h3{color:#fff}
+.highlight .card p{color:rgba(255,255,255,0.8)}
+.curriculum-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.curr-item{background:#f8f9fa;border-radius:8px;padding:16px 20px;border-left:4px solid #3a7bd5}
+.curr-item strong{display:block;margin-bottom:4px}
+.curr-item span{color:#777;font-size:0.85em}
+.pricing{display:flex;justify-content:center;gap:24px;flex-wrap:wrap;margin-top:32px}
+.price-card{background:#fff;border:2px solid #e9ecef;border-radius:16px;padding:36px 32px;text-align:center;max-width:340px;width:100%;position:relative}
+.price-card.popular{border-color:#3a7bd5;box-shadow:0 8px 30px rgba(58,123,213,0.15)}
+.price-card.popular::before{content:'MOST POPULAR';position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:#3a7bd5;color:#fff;padding:4px 16px;border-radius:20px;font-size:0.75em;font-weight:700}
+.price-card .price{font-size:3em;font-weight:800;color:#1a1a2e;margin:8px 0}
+.price-card .price span{font-size:0.4em;color:#777}
+.price-card ul{list-style:none;margin:20px 0;text-align:left}
+.price-card ul li{padding:8px 0;border-bottom:1px solid #f0f0f0;font-size:0.95em}
+.price-card ul li:before{content:'✓ ';color:#3a7bd5;font-weight:700}
+.faq-item{border-bottom:1px solid #e9ecef;padding:20px 0}
+faq-item:last-child{border:none}
+.faq-item h3{font-size:1.1em;margin-bottom:8px;cursor:pointer}
+.faq-item p{color:#555}
+.footer{background:#1a1a2e;color:#fff;padding:40px 0;text-align:center;font-size:0.9em}
+.footer a{color:#00d2ff;text-decoration:none}
+</style>
+</head>
+<body>
+
+<div class="hero">
+<div class="container">
+<h1>AI Engineering <span>from Scratch</span></h1>
+<p>503 lessons. 20 phases. ~320 hours. The most comprehensive open-source AI engineering curriculum — now available as a structured, guided course.</p>
+<a href="#pricing" class="cta">Get Instant Access — $69</a>
+<div class="stats">
+<div class="stat"><div class="stat-num">503</div><div class="stat-label">Lessons</div></div>
+<div class="stat"><div class="stat-num">20</div><div class="stat-label">Phases</div></div>
+<div class="stat"><div class="stat-num">320h</div><div class="stat-label">Content</div></div>
+<div class="stat"><div class="stat-num">4</div><div class="stat-label">Languages</div></div>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="container">
+<h2>What You'll Learn</h2>
+<p class="sub">From raw math to production-grade AI systems. Every algorithm built from scratch first — then with frameworks.</p>
+<div class="grid">
+<div class="card"><div class="icon">🧮</div><h3>Math Foundations</h3><p>Linear algebra, calculus, probability, optimization — the real math behind ML, not the watered-down version.</p></div>
+<div class="card"><div class="icon">🧠</div><h3>Deep Learning from Scratch</h3><p>Build backprop, attention, and transformers by hand before touching PyTorch. You'll actually understand what's happening.</p></div>
+<div class="card"><div class="icon">💬</div><h3>LLMs from Zero</h3><p>Tokenizers, pre-training, SFT, RLHF, DPO, quantization — build your own GPT from the ground up.</p></div>
+<div class="card"><div class="icon">🤖</div><h3>Agent Engineering</h3><p>ReWOO, Reflexion, LangGraph, CrewAI — 42 lessons on building autonomous AI agents that actually work.</p></div>
+<div class="card"><div class="icon">🔧</div><h3>Production & Infrastructure</h3><p>vLLM, SGLang, quantization, FinOps, compliance — ship AI systems that scale.</p></div>
+<div class="card"><div class="icon">🏗️</div><h3>85 Capstone Projects</h3><p>End-to-end products you can put in your portfolio. Real code, real systems, real results.</p></div>
+</div>
+</div>
+</div>
+
+<div class="section highlight">
+<div class="container">
+<h2>Curriculum Overview</h2>
+<div class="curriculum-grid">
+<div class="curr-item"><strong>Phase 0–3:</strong><span>Setup, Math, ML, Deep Learning (65 lessons)</span></div>
+<div class="curr-item"><strong>Phase 4–6:</strong><span>Computer Vision, NLP, Speech & Audio (74 lessons)</span></div>
+<div class="curr-item"><strong>Phase 7–9:</strong><span>Transformers, Generative AI, RL (43 lessons)</span></div>
+<div class="curr-item"><strong>Phase 10–11:</strong><span>LLMs from Scratch, LLM Engineering (41 lessons)</span></div>
+<div class="curr-item"><strong>Phase 12–14:</strong><span>Multimodal AI, Tools & MCP, Agent Engineering (90 lessons)</span></div>
+<div class="curr-item"><strong>Phase 15–17:</strong><span>Autonomous Systems, Multi-Agent, Production (75 lessons)</span></div>
+<div class="curr-item"><strong>Phase 18–19:</strong><span>Ethics & Safety, Capstone Projects (115 lessons)</span></div>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="container">
+<h2>Why This Course?</h2>
+<div class="grid">
+<div class="card"><div class="icon">🎯</div><h3>Build It, Then Use It</h3><p>Every algorithm implemented from raw math first. Then you run the same thing through PyTorch/sklearn. You actually learn, not just copy-paste.</p></div>
+<div class="card"><div class="icon">📦</div><h3>Ship Real Artifacts</h3><p>Every lesson produces a reusable tool — a prompt, a skill, an agent, an MCP server. 503 lessons = 503 tools for your toolkit.</p></div>
+<div class="card"><div class="icon">🌍</div><h3>Multi-Language</h3><p>Python, TypeScript, Rust, Julia — not just Python. Learn the right tool for the right job.</p></div>
+<div class="card"><div class="icon">✅</div><h3>Quiz-Driven</h3><p>338 quizzes with 6 questions each. Pre-lesson knowledge checks, mid-lesson comprehension, post-lesson retention.</p></div>
+</div>
+</div>
+</div>
+
+<div class="section" id="pricing" style="background:#f8f9fa">
+<div class="container">
+<h2>Get Started Today</h2>
+<p class="sub">One-time payment. Lifetime access. All 503 lessons, quizzes, code, and capstone projects.</p>
+<div class="pricing">
+<div class="price-card">
+<h3>Self-Paced</h3>
+<div class="price">$69<span>/one-time</span></div>
+<ul>
+<li>All 503 lessons</li>
+<li>All code implementations</li>
+<li>338 quizzes</li>
+<li>85 capstone project briefs</li>
+<li>Python, TS, Rust, Julia code</li>
+<li>Lifetime access</li>
+<li>Community Discord</li>
+</ul>
+<a href="https://gumroad.com/l/ai-engineering-from-scratch" class="cta" style="display:block;margin-top:20px">Buy Now on Gumroad</a>
+</div>
+<div class="price-card popular">
+<h3>Premium</h3>
+<div class="price">$149<span>/one-time</span></div>
+<ul>
+<li>Everything in Self-Paced</li>
+<li>20 phase-intro video walkthroughs</li>
+<li>Downloadable PDF worksheets</li>
+<li>Completion certificates per phase</li>
+<li>Priority Discord support</li>
+<li>Capstone project rubrics</li>
+<li>Cheat sheets for each phase</li>
+</ul>
+<a href="https://gumroad.com/l/ai-engineering-premium" class="cta" style="display:block;margin-top:20px">Buy Premium</a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="container">
+<h2>FAQ</h2>
+<div class="faq-item"><h3>Do I need prior ML experience?</h3><p>No. The course starts from math foundations (linear algebra, calculus) and builds up. If you know basic Python, you're ready.</p></div>
+<div class="faq-item"><h3>How long does it take?</h3><p>~320 hours total. At 10 hours/week, that's about 8 months. But you can skip phases you already know — start at Phase 10 for LLMs if you have ML background.</p></div>
+<div class="faq-item"><h3>Is this really worth $69?</h3><p>This content is equivalent to a $2,000+ bootcamp. 503 lessons, 320 hours, 4 programming languages, 85 capstone projects. The MIT-licensed open-source version is free — you're paying for the structured, guided experience.</p></div>
+<div class="faq-item"><h3>What if I want a refund?</h3><p>Gumroad offers refunds within 30 days. If you're not satisfied, you get your money back. No questions asked.</p></div>
+<div class="faq-item"><h3>Can I use this for my team/company?</h3><p>Yes. The MIT license allows commercial use. Buy one copy per team member, or contact us for team pricing.</p></div>
+</div>
+</div>
+
+<div class="footer">
+<div class="container">
+<p>Based on <a href="https://github.com/rohitg00/ai-engineering-from-scratch">AI Engineering from Scratch</a> by Rohit Ghumare. MIT License.</p>
+<p>Packaged and sold by <a href="https://syncspherellc.com">SyncSphere LLC</a></p>
+<p style="margin-top:16px;opacity:0.6">© 2026 SyncSphere LLC. All rights reserved.</p>
+</div>
+</div>
+
+</body>
+</html>
